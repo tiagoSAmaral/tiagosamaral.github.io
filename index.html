@@ -9,6 +9,11 @@
                 appId: "1e4a42ea-9307-4116-927c-7b7f77ec3edb",
                 });
             });
+            
+            OneSignal.addListenerForNotificationOpened(function(data) {
+                console.log("Received NotificationOpened:");
+                console.log(data);
+            });
         </script>
     </head>
     <body>
